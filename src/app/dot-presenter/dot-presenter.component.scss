@@ -1,0 +1,49 @@
+.line {
+  height: 1px;
+  background: #fff;
+}
+
+.point {
+  height: 6px;
+  width: 6px;
+  border-radius: 3px;
+  background: #fff;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  direction: rtl;
+}
+
+.content {
+  margin-right: 10px;
+}
+
+@keyframes wiggle {
+  0% {
+    transform: translateX(10%);
+    filter: blur(2px);
+  }
+
+  20% {
+    filter: blur(0px);
+  }
+
+  50% {
+    filter: blur(2px);
+  }
+
+  60% {
+    filter: blur(0px);
+  }
+
+  75% {
+    filter: blur(1px);
+  }
+
+  100% {
+    transform: translateX(0%);
+    filter: blur(0px);
+  }
+}

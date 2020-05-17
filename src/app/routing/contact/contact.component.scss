@@ -1,0 +1,23 @@
+.deuv{
+    font-size: 2.8em;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    font-size: 1.7em;
+    margin-bottom: 0.3em;
+    padding: 10px 30px;
+    background: rgba(255, 255, 255, 0.502);
+    color: rgb(74, 74, 74);
+    border-radius: calc(0.8em + 10px);
+  }
+
+  .item{
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+  }

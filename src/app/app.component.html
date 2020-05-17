@@ -1,0 +1,15 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div class="container" *ngIf="!loading">
+  <div class="bg">
+    <img src="assets/mountains4.jpg" alt="">
+  </div>
+  <div class="router-container">
+    <router-outlet></router-outlet>
+  </div>
+  <!-- <drv-langauge-switcher></drv-langauge-switcher> -->
+  <!-- <img class="seperator-top" src="assets/seperator-top.svg" alt=""> -->
+  <drv-menu></drv-menu>
+  <drv-banner></drv-banner>
+  <!-- <img class="seperator" src="assets/seperator.svg" alt=""> -->
+</div>
+<drv-loading-screen *ngIf="loading" (end)="loadingEnd()"></drv-loading-screen>

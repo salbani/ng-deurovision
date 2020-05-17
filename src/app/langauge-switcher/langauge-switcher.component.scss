@@ -1,0 +1,81 @@
+.lang-switcher.container {
+  position: absolute;
+  transform: rotate(-45deg);
+  color: var(--main-color);
+}
+
+.seperator.animate {
+  animation: rotate 0.7s 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.seperator {
+  width: 100%;
+  height: 1px;
+  background: var(--main-color);
+}
+
+.lang {
+  overflow: hidden;
+  text-align: center;
+}
+
+.lang>div>div {
+  transform: rotate(45deg);
+  padding: 5px;
+}
+
+.bot>div.animate {
+  animation: switch-bot 1.7s ease-in-out;
+}
+
+.top>div.animate {
+  animation: switch-top 1.7s ease-in-out;
+}
+
+.top{
+    font-size: 30px;
+}
+
+.bot {
+    font-size: 20px;
+}
+
+@keyframes switch-bot {
+    33% {
+      transform: translateY(-150%);
+      filter: blur(4px);
+    }
+  
+    66% {
+      transform: translateY(-150%);
+      filter: blur(4px);
+    }
+  
+    100% {
+      transform: translateY(0%);
+    }
+}
+
+@keyframes switch-top {
+  33% {
+    transform: translateY(150%);
+    filter: blur(4px);
+  }
+
+  66% {
+    transform: translateY(150%);
+    filter: blur(4px);
+  }
+
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+@keyframes rotate {
+  0% {}
+
+  100% {
+    transform: rotate(180deg);
+  }
+}

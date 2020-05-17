@@ -1,0 +1,10 @@
+<div class="container">
+  <div *ngIf="title !== undefined" class="top">
+    <h1>{{title}}</h1>
+  </div>
+  <div [style.top]="title === undefined ? '0' : '114px'" class="bot">
+    <div class="scroll">
+      <ng-content></ng-content>
+    </div>
+  </div>
+</div>

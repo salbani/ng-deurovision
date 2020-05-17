@@ -1,0 +1,18 @@
+<div [@menuState]="state" class="mobile container">
+  <drv-banner></drv-banner>
+  <div (click)="select($event)" [routerLink]="'home'">HOME</div>
+  <div (click)="select($event)" [routerLink]="'career'">CAREER</div>
+  <div (click)="select($event)" [routerLink]="'contact'">CONTACT</div>
+  <div (click)="select($event)" [routerLink]="'impressum'">IMPRESSUM</div>
+</div>
+<div class="menu-btn container" (click)="toggleMenu()">
+  <div [@lineStateTop]="state" class="line top"></div>
+  <div [@menuBtnState]="state" class="menu-line">MENU</div>
+  <div [@lineStateBot]="state" class="line bot"></div>
+</div>
+<div class="desktop container">
+  <div [routerLink]="'home'">HOME</div>
+  <div [routerLink]="'career'">CAREER</div>
+  <div [routerLink]="'contact'">CONTACT</div>
+  <div [routerLink]="'impressum'">IMPRESSUM</div>
+</div>

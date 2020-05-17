@@ -1,0 +1,13 @@
+<div class="lang-switcher container" (click)="switchLanguage()">
+  <div class="lang top">
+    <div [class.animate]="animate">
+      <div>{{languages[0]}}</div>
+    </div>
+  </div>
+  <div class="seperator" [class.animate]="animate"></div>
+  <div class="lang bot">
+    <div [class.animate]="animate">
+      <div>{{languages[1]}}</div>
+    </div>
+  </div>
+</div>

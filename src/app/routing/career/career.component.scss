@@ -1,0 +1,24 @@
+.container {
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  font-size: 1.7em;
+  margin-bottom: 0.3em;
+  padding: 10px 30px;
+  background: rgba(255, 255, 255, 0.502);
+  color: rgb(74, 74, 74);
+  border-radius: calc(0.8em + 10px);
+}
+
+h2 {
+//   background: #222222;
+  padding: 20px 10px;
+  text-align: center;
+}

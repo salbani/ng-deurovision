@@ -1,0 +1,22 @@
+/* You can add global styles to this file, and also import other style files */
+:root{
+    --main-color: #222;
+    --main-bg-color: #fff;
+    --secondary-color: rgb(99, 99, 99);
+    --accent-color: #953a3a;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+}
+
+*{
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}

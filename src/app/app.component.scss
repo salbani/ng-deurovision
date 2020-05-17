@@ -1,0 +1,176 @@
+@media only screen and (min-width: 2650px) {
+  .bg>img {
+    width: 100% !important;
+    position: absolute !important;
+    height: auto !important;
+  }
+}
+
+@media only screen and (max-width: 1195px) {
+  drv-banner {
+    right: 30px !important;
+  }
+}
+
+@media only screen and (min-width: 830px) {
+
+  .container>drv-banner {
+    right: 90px;
+    left: unset;
+    top: 19px;
+    transform-origin: 100% 0;
+    transform: scale(0.5);
+  }
+}
+
+@media only screen and (max-width: 830px) {
+  .bg>img {
+    max-width: 2000px !important;
+    min-height: auto !important;
+    height: auto !important;
+  }
+
+  drv-banner {
+    top: 6px !important;
+    right: 26px !important;
+    left: unset !important;
+    transform-origin: 100% 0;
+    transform: scale(0.5);
+  }
+
+  .container>drv-menu {
+    height: 100px;
+  }
+  
+  .container>.router-container {
+    top: 100px;   
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  drv-banner {
+    top: 23.5px !important;
+    right: 26px !important;
+    left: unset !important;
+    transform-origin: 100% 0;
+    transform: scale(0.3);
+  }
+}
+
+@media only screen and (max-width: 530px) {
+  .bg>img {
+    left: 30% !important;
+    max-width: 1500px !important;
+    min-height: auto !important;
+    height: auto !important;
+  }
+}
+
+@media only screen and (max-height: 830px) {
+  .bg>img {
+    min-height: auto !important;
+    max-height: 1000px !important;
+    height: auto !important;
+  }
+}
+
+
+.container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background: var(--main-bg-color);
+}
+
+.seperator-top {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+
+.seperator {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.bg {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  left: 0;
+  right: 0;
+}
+
+.bg>img {
+  // width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: auto;
+  position: absolute;
+  min-height: 1780px;
+  height: 100%;
+}
+
+.router-container {
+  background: rgba(51, 51, 51, 0.85);
+  position: absolute;
+  bottom: 0;
+  overflow: hidden;
+  top: 125px;
+  left: 0;
+  right: 0;
+  border-radius: 0;
+  color: white;
+  padding: 30px;
+}
+
+drv-loading-screen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+drv-langauge-switcher {
+  position: absolute;
+  top: 5px;
+  right: 80px;
+  animation: fade-in 0.6s ease-out;
+}
+
+drv-banner {
+  position: absolute;
+  top: 300px;
+  left: 10%;
+}
+
+drv-menu {
+  background: white;
+  position: absolute;
+  height: 125px;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    filter: blur(4px);
+    transform: scale(0.8)
+  }
+
+  100% {
+    opacity: 1;
+    filter: blur(0px);
+    transform: scale(1)
+  }
+}

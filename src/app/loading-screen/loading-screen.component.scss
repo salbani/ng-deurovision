@@ -1,0 +1,66 @@
+.loading.container {
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  animation: text-h 3.2s 0s linear, fade-out 3.5s linear;
+  color: hsl(97, 60%, 56%);
+  opacity: 0;
+}
+
+.letter {
+  display: inline;
+  padding: 10px;
+  font-size: 30px;
+
+  filter: blur(0px);
+  animation: blur-text 3s 0s linear;
+}
+
+@media only screen and (max-width: 460px) {
+  .letter {
+    padding: 6px;
+  }
+}
+
+@keyframes blur-text {
+  0% {
+    filter: blur(0px);
+  }
+
+  50% {
+    filter: blur(4px);
+  }
+
+  100% {
+    filter: blur(0px);
+  }
+}
+
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+
+  57% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes text-h {
+  0% {
+    color: hsl(180, 60%, 56%);
+  }
+
+  100% {
+    color: hsl(97, 60%, 56%);
+  }
+}

@@ -1,0 +1,8 @@
+<!-- <div class="container" [ngStyle]="{ 'animation': this.animation}"> -->
+<div class="container">
+  <div class="line" [ngStyle]="{ 'width': this.lineWidth + 'px' }"></div>
+  <div class="point"></div>
+  <div class="content">
+    <ng-content></ng-content>
+  </div>
+</div>

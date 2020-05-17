@@ -1,0 +1,149 @@
+body 
+{
+ background-color: #FFFFFF;
+ padding: 0;
+ height: 100%; /* WICHTIG!!! STRECKT ANZEIGENBEREICH AUF 100% */ 
+ margin-top: 50px;
+ margin-bottom: 0px;
+ margin-left: 0px;
+ margin-right: 0px;
+ line-height: 18px;
+ font-family: Arial, Helvetica, sans-serif;
+ font-size: 12px;
+ color: Black;
+
+}
+
+#wrapper
+{
+    background-color: #FFFFFF; 
+    width: 1000px; 
+    margin: auto; /* Div soll zentriert werden */
+    min-height: 100%; /* Mindesthöhe für moderne Browser */
+    height:auto !important; /* Important Regel für moderne Browser */ 
+    height:100%; /* Mindesthöhe für den IE */ 
+    overflow: hidden !important; /* FF Scroll-leiste */ 
+}
+
+#facts
+{
+    height: 368px;   
+}
+
+
+.style1
+{
+    width: 140px;
+}
+
+.pagename
+{
+ color: Red;   
+}
+
+a:link {
+	color: #201d71;
+	text-decoration: none;
+}
+
+a:visited {
+	color: #201d71;
+	text-decoration: none;
+}
+a:focus :hover :active {
+	color: #e25500;
+	text-decoration: none;
+}
+a:hover {
+	color: #e25500;
+	text-decoration: none;
+}
+
+.nav {
+	font-family: "Times New Roman", Times, serif;
+	font-size: 13px;
+	font-weight: bold;
+	text-transform: uppercase;
+    color: #021c8c;
+}
+
+.headline {
+	font-family: "Arial", Times, serif;
+	font-size: 16px;
+	color: #201d71;
+	line-height: 24px;
+	font-weight: bold;
+}
+
+
+.textfact
+{
+ color: #021c8c;
+ font-family: Arial;
+ font-size: 12px;   
+}
+
+.tdimpressum
+{
+ width: 150px;   
+}
+
+.textimpressum
+{
+ color: #021c8c;
+ font-family: Arial;
+ font-size: 12px;   
+}
+
+
+p {
+	height: 392px;
+}
+
+
+
+li {
+	list-style-image: url(images/ribbon_blue.png);
+	line-height: 28px;
+	font-size: 12px;
+	font-family: Arial, Helvetica, sans-serif;
+	padding:0 0 0 5px;
+}
+
+
+HR {
+	color: #e25500;
+	height: 1pt;
+	line-height: 15px;
+}
+
+.senior {
+	font-weight: bold;
+	color: #e25500;
+}
+
+.initial_td {
+	font-family: Verdana, Arial, Helvetica, sans-serif; 
+	font-size: 33px; 
+	color: #002050; 
+	text-align: left; 
+ 	/*vertical-align: top;	*/
+	font-weight: normal;
+	line-height: 36px;
+}
+
+.minihome { 
+font-size: 1px; 
+line-height: 2px; 
+color: #000000; 
+}
+
+.text_big { 
+font-family: Verdana, Arial, Helvetica, sans-serif; 
+text-align: justify; 
+font-size: 12px; 
+line-height: 18px; 
+vertical-align: top; 
+padding-bottom: 6px; 
+padding-top: 12px; 
+}

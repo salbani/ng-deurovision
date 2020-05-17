@@ -1,0 +1,144 @@
+@media only screen and (min-width: 1100px) {
+  .mobile.container {
+    display: none !important;
+  }
+
+  .menu-btn.container {
+    display: none !important;
+  }
+
+  .desktop.container {
+    display: flex !important;
+  }
+}
+
+@media only screen and (min-width: 830px) {
+  .menu-btn.container {
+    top: 39px !important;
+    left: 40px !important;
+    transform: scale(1.06);
+  }
+}
+
+@media only screen and (min-width: 1100px) and (max-width: 1195px) {
+  .desktop.container {
+    font-size: 20px !important;
+    padding: 49px 515px 49px 30px !important;
+  }
+}
+
+
+
+drv-banner {
+  position: absolute;
+  top: 300px;
+  left: 10%;
+  color: white;
+}
+
+@media only screen and (max-width: 1195px) {
+  drv-banner {
+    right: 30px !important;
+  }
+}
+
+@media only screen and (min-width: 830px) {
+  .container>drv-banner {
+    right: 90px;
+    left: unset;
+    top: 19px;
+    transform-origin: 100% 0;
+    transform: scale(0.5);
+  }
+}
+
+@media only screen and (max-width: 830px) {
+  drv-banner {
+    top: 6px !important;
+    right: 26px !important;
+    left: unset !important;
+    transform-origin: 100% 0;
+    transform: scale(0.5);
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  drv-banner {
+    top: 23.5px !important;
+    right: 26px !important;
+    left: unset !important;
+    transform-origin: 100% 0;
+    transform: scale(0.3);
+  }
+}
+
+.desktop.container {
+  // text-shadow: 0 0 25px black;
+  color: black;
+  width: 100%;
+  display: none;
+  flex-flow: row;
+  justify-content: space-between;
+  font-size: 30px;
+  padding: 42px 515px 42px 100px;
+
+  >div {
+    outline: none !important;
+    cursor: pointer;
+    user-select: none;
+  }
+}
+
+.menu-line {
+  font-size: 19.7px;
+  padding: 9px 0;
+  color: var(--main-color);
+}
+
+.line {
+  margin: auto;
+  width: 100%;
+  height: 2px;
+  background: var(--main-color);
+  top: 50%;
+}
+
+.menu-btn.container {
+  position: absolute;
+  top: 26px;
+  left: 26px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 501;
+}
+
+.mobile.container {
+  position: absolute;
+  color: white;
+  background: linear-gradient(hsl(180, 5%, 15%), hsl(180, 5%, 10%));
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 500;
+}
+
+.mobile.container>div {
+  padding: 25px 0;
+  font-size: 40px, ;
+  margin: 0 auto;
+  outline: none;
+}
+
+.selected {
+  transition: 0.7s;
+  transform: scale(2);
+  filter: blur(10px);
+}
+
+@keyframes select {
+  100% {}
+}
